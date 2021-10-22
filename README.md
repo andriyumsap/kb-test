@@ -20,7 +20,7 @@ mvn clean install
 docker build -t kb-test:latest .
 
 # create container
-docker container create --name kb-test -e "PORT=8080" -p 8080:8080 kb-test
+docker container create --name kb-test -p 8080:8080 kb-test
 
 # start container
 docker container start kb-test
