@@ -10,7 +10,7 @@
 
 Make sure the laptop / PC has been installed [maven](https://maven.apache.org/install.html) & [docker](https://docs.docker.com/get-docker/)
 
-1. Go to the project folder and run the command
+Go to the project folder and run the command
 
 ```bash
 # build / generate jar with running test
