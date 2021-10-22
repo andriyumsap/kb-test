@@ -17,16 +17,16 @@ Go to the project folder and run the command
 mvn clean install
 
 # build image
-docker build -t kitabisa-test:latest .
+docker build -t kb-test:latest .
 
 # create container
-docker container create --name kitabisa-test -e "PORT=8080" -p 8080:8080 kitabisa-test
+docker container create --name kb-test -e "PORT=8080" -p 8080:8080 kb-test
 
 # start container
-docker container start kitabisa-test
+docker container start kb-test
 
 # stop container
-docker container stop kitabisa-test
+docker container stop kb-test
 ```
 
 # Swagger
