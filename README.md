@@ -39,7 +39,7 @@ There are two vendors
 
 default vendor one is active
 
-To make changes to the notification vendor configuration, please access the following link
+To make changes notification vendor configuration, please access the following link
 ```bash
 http://localhost:8080/togglz-console
 ```
