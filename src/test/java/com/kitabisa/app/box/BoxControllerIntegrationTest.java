@@ -11,6 +11,7 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -18,6 +19,7 @@ import org.springframework.util.MultiValueMap;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
+@TestPropertySource(properties = {"sms.url.vendor-one=one", "sms.url.vendor-two=two"})
 @SpringBootTest(classes = TestKitabisaApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class BoxControllerIntegrationTest {
     @Autowired
