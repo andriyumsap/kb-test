@@ -2,7 +2,7 @@
 
 1. Spring Boot - 2.1.8.RELEASE
 2. Togglz - 2.6.1.Final
-3. h2 database
+3. H2 database
 4. JDK 12
 5. Maven
 
@@ -20,7 +20,7 @@ mvn clean install
 docker build -t kb-test:latest .
 
 # create container
-docker container create --name kb-test -p 8080:8080 kb-test
+docker container create --name kb-test -e "SPRING_PROFILES_ACTIVE=dev" -p 8080:8080 kb-test
 
 # start container
 docker container start kb-test
