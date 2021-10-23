@@ -10,23 +10,23 @@
 
 Make sure the laptop / PC has been installed [maven](https://maven.apache.org/install.html) & [docker](https://docs.docker.com/get-docker/)
 
-1. Go to the project folder and run the command
+Go to the project folder and run the command
 
 ```bash
 # build / generate jar with running test
 mvn clean install
 
 # build image
-docker build -t kitabisa-test:latest .
+docker build -t kb-test:latest .
 
 # create container
-docker container create --name kitabisa-test -e "PORT=8080" -p 8080:8080 kitabisa-test
+docker container create --name kb-test -p 8080:8080 kb-test
 
 # start container
-docker container start kitabisa-test
+docker container start kb-test
 
 # stop container
-docker container stop kitabisa-test
+docker container stop kb-test
 ```
 
 # Swagger
@@ -39,7 +39,7 @@ There are two vendors
 
 default vendor one is active
 
-To make changes to the notification vendor configuration, please access the following link
+To make changes notification vendor configuration, please access the following link
 ```bash
 http://localhost:8080/togglz-console
 ```
